@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,500");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+@keyframes background-gradient {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+.header .intro i, .header .header-nav ul li a {
+  transition: color 300ms;
+}
+.header .intro i:hover, .header .header-nav ul li a:hover {
+  color: #efefef;
+}
+
+::selection {
+  background: #1bffb3;
+}
+
+.icons-mobile {
+  display: none;
+}
+
+.header {
+  height: 100%;
+  background: linear-gradient(120deg, #03a9f4, #1bffb3);
+  background-size: 200% 100%;
+  animation: background-gradient 5s linear infinite alternate;
+  color: #fff;
+}
+.header .header-nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+}
+.header .header-nav ul li a {
+  padding: 0 1.5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+.header .intro {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .intro h1 {
+  font-size: 4.5rem;
+}
+.header .intro h1::before {
+  content: "Front-end Developer";
+  text-transform: uppercase;
+  font-size: 1.13rem;
+  position: absolute;
+  top: -1rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+.header .intro .icons {
+  float: right;
+}
+.header .intro i {
+  font-size: 0.75em;
+  color: #fff;
+  padding: 0 1rem;
+}
+.header .intro p {
+  padding-top: 1rem;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 1500px) {
+  .icons {
+    display: none;
+  }
+
+  .icons-mobile {
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 4rem;
+    font-size: 4.5rem;
+  }
+  .icons-mobile i {
+    color: #fff;
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 900px) {
+  .header .intro {
+    width: 90%;
+    text-align: center;
+  }
+  .header .header-nav ul {
+    flex-direction: column;
+  }
+  .header .header-nav ul li {
+    padding: 0.5rem 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
