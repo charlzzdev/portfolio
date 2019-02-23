@@ -10,6 +10,16 @@ html, body {
   height: 100%;
 }
 
+::selection {
+  background: #1bffb3;
+}
+
+.section-divider {
+  font-size: 2rem;
+  padding: 5rem 0;
+  text-align: center;
+}
+
 @keyframes background-gradient {
   0% {
     background-position: 0;
@@ -23,10 +33,6 @@ html, body {
 }
 .header .intro i:hover, .header .header-nav ul li a:hover {
   color: #efefef;
-}
-
-::selection {
-  background: #1bffb3;
 }
 
 .icons-mobile {
@@ -85,6 +91,74 @@ html, body {
   font-size: 1.3rem;
 }
 
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.projects figure {
+  position: relative;
+}
+.projects figure img {
+  max-width: 100%;
+}
+.projects figure figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.projects figure figcaption h1, .projects figure figcaption p {
+  padding-bottom: 1rem;
+}
+.projects figure figcaption a {
+  text-decoration: none;
+  color: #03a9f4;
+}
+.projects figure figcaption a:hover {
+  text-decoration: underline;
+}
+.projects figure:hover {
+  overflow: hidden;
+}
+.projects figure:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  opacity: 0;
+  transform: rotateZ(180deg);
+  animation: hoverItem 300ms forwards;
+}
+@keyframes hoverItem {
+  100% {
+    transform: rotateZ(0deg);
+    opacity: 0.95;
+  }
+}
+.projects figure:hover figcaption {
+  opacity: 1;
+  width: 80%;
+  text-align: center;
+  transition: opacity 300ms;
+  transition-delay: 300ms;
+}
+.projects figure:hover .actions {
+  margin-top: 1rem;
+}
+.projects figure:hover .actions a {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  color: #03a9f4;
+  background: #333;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.projects figure:hover .actions a:hover {
+  background: #444;
+}
+
 @media (max-width: 1500px) {
   .icons {
     display: none;
@@ -102,17 +176,31 @@ html, body {
     color: #fff;
     padding: 0 1rem;
   }
+
+  .projects {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media (max-width: 900px) {
   .header .intro {
     width: 90%;
     text-align: center;
   }
+  .header .intro h1::before {
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
   .header .header-nav ul {
     flex-direction: column;
+    height: auto;
   }
   .header .header-nav ul li {
     padding: 0.5rem 0;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
   }
 }
 

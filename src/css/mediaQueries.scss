@@ -1,0 +1,46 @@
+@media (max-width: 1500px){
+      .icons{
+            display: none;
+      }
+      .icons-mobile{
+            display: block;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            bottom: 4rem;
+            font-size: 4.5rem;
+            i{
+                  color: #fff;
+                  padding: 0 1rem;
+            }
+      }
+
+      .projects{
+            grid-template-columns: 1fr 1fr;
+      }
+}
+
+@media (max-width: 900px){
+      .header{
+            .intro{
+                  width: 90%;
+                  text-align: center;
+                  h1::before{
+                        width: 100%;
+                        left: 0;
+                        text-align: center;
+                  }
+            }
+
+            .header-nav ul{
+                  flex-direction: column;
+                  height: auto;
+                  li{
+                        padding: 0.5rem 0;
+                  }
+            }
+      }
+      .projects{
+            grid-template-columns: 1fr;
+      }
+}

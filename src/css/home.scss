@@ -1,0 +1,76 @@
+@keyframes background-gradient{
+      0%{
+            background-position: 0;
+      }
+      100%{
+            background-position: 100%;
+      }
+}
+
+%hover {
+      transition: color 300ms;
+      &:hover{
+            color: #efefef;
+      }
+}
+
+.icons-mobile{
+      display: none;
+}
+
+.header{
+      height: 100%;
+      background: linear-gradient(120deg, $blue, $green);
+      background-size: 200% 100%;
+      animation: background-gradient 5s linear infinite alternate;
+      color: #fff;
+
+      .header-nav ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 35vh;
+
+            li a{
+                  padding: 0 1.5rem;
+                  font-size: 1.5rem;
+                  text-decoration: none;
+                  color: #fff;
+                  @extend %hover;
+            }
+      }
+
+      .intro{
+            position: absolute;
+            width: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            h1{
+                  font-size: 4.5rem;
+                  &::before{
+                        content: "Front-end Developer";
+                        text-transform: uppercase;
+                        font-size: 1.13rem;
+                        position: absolute;
+                        top: -1rem;
+                        font-weight: 200;
+                        letter-spacing: 1px;
+                  }
+            }
+            .icons{
+                  float: right;
+            }
+            i{
+                  font-size: 0.75em;
+                  color: #fff;
+                  @extend %hover;
+                  padding: 0 1rem;
+            }
+            p{
+                  padding-top: 1rem;
+                  font-size: 1.3rem;
+            }
+      }
+}

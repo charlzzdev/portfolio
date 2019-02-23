@@ -1,0 +1,71 @@
+.projects{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      figure{
+            position: relative;
+            img{
+                  max-width: 100%;
+            }
+            figcaption{
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  opacity: 0;
+
+                  h1, p{
+                        padding-bottom: 1rem;
+                  }
+
+                  a{
+                        text-decoration: none;
+                        color: $blue;
+                        &:hover{
+                              text-decoration: underline;
+                        }
+                  }
+            }
+
+            &:hover{
+                  overflow: hidden;
+                  &::before{
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background: #eee;
+                        opacity: 0;
+                        transform: rotateZ(180deg);
+                        animation: hoverItem 300ms forwards;
+
+                        @keyframes hoverItem{
+                              100%{
+                                    transform: rotateZ(0deg);
+                                    opacity: 0.95;
+                              }
+                        }
+                  }
+                  figcaption{
+                        opacity: 1;
+                        width: 80%;
+                        text-align: center;
+                        transition: opacity 300ms;
+                        transition-delay: 300ms;
+                  }
+                  .actions{
+                        margin-top: 1rem;
+                        a{
+                              font-family: 'Raleway', sans-serif;
+                              text-decoration: none;
+                              color: $blue;
+                              background: #333;
+                              padding: 0.5rem;
+                              border-radius: 1rem;
+                              &:hover{
+                                    background: #444;
+                              }
+                        }
+                  }
+            }
+      }
+}
