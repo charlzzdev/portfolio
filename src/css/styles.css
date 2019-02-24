@@ -170,6 +170,25 @@ html, body {
   line-height: 1.7;
 }
 
+.contact a {
+  color: #333;
+  display: block;
+  text-decoration: none;
+  width: 20%;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.contact a i {
+  font-size: 30px;
+  padding-right: 0.5rem;
+}
+.contact p {
+  padding: 2rem 0;
+  text-align: center;
+}
+
 @media (max-width: 1500px) {
   .icons {
     display: none;
@@ -229,6 +248,10 @@ html, body {
   }
   .about .about-img {
     text-align: center;
+  }
+
+  .contact a {
+    width: 70%;
   }
 }
 

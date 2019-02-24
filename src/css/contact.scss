@@ -1,0 +1,20 @@
+.contact{
+      a{
+            color: #333;
+            display: block;
+            text-decoration: none;
+            width: 20%;
+            margin: 0 auto;
+            padding-top: 0.5rem;
+            display: flex;
+            align-items: center;
+            i{
+                  font-size: 30px;
+                  padding-right: 0.5rem;
+            }
+      }
+      p{
+            padding: 2rem 0;
+            text-align: center;
+      }
+}
