@@ -39,7 +39,8 @@
             }
 
             .header-nav ul{
-                  flex-direction: column;
+                  flex-direction: row;
+                  flex-wrap: wrap;
                   height: auto;
                   li{
                         padding: 0.5rem 0;

@@ -207,7 +207,8 @@ html, body {
     text-align: center;
   }
   .header .header-nav ul {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     height: auto;
   }
   .header .header-nav ul li {
