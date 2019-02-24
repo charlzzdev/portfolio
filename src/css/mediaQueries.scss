@@ -18,6 +18,12 @@
       .projects{
             grid-template-columns: 1fr 1fr;
       }
+
+      .about{
+            .about-text{
+                  width: 60%;
+            }
+      }
 }
 
 @media (max-width: 900px){
@@ -40,7 +46,20 @@
                   }
             }
       }
+
       .projects{
             grid-template-columns: 1fr;
+      }
+
+      .about{
+            flex-direction: column-reverse;
+            .about-text{
+                  width: 85%;
+                  padding-top: 2rem;
+                  padding-right: 0;
+            }
+            .about-img{
+                  text-align: center;
+            }
       }
 }

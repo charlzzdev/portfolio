@@ -1,0 +1,10 @@
+.about{
+      display: flex;
+      justify-content: center;
+      .about-text{
+            width: 35%;
+            padding-right: 1rem;
+            align-self: center;
+            line-height: 1.7;
+      }
+}
