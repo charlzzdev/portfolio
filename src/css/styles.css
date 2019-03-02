@@ -28,10 +28,10 @@ html, body {
     background-position: 100%;
   }
 }
-.header .intro i, .header .header-nav ul li a {
+.home .intro i, .home .home-nav ul li, .home .home-nav ul li a {
   transition: color 300ms;
 }
-.header .intro i:hover, .header .header-nav ul li a:hover {
+.home .intro i:hover, .home .home-nav ul li:hover, .home .home-nav ul li a:hover {
   color: #efefef;
 }
 
@@ -39,37 +39,38 @@ html, body {
   display: none;
 }
 
-.header {
+.home {
   height: 100%;
   background: linear-gradient(120deg, #03a9f4, #1bffb3);
   background-size: 200% 100%;
   animation: background-gradient 5s linear infinite alternate;
   color: #fff;
 }
-.header .header-nav ul {
+.home .home-nav ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 35vh;
 }
-.header .header-nav ul li a {
+.home .home-nav ul li, .home .home-nav ul li a {
+  cursor: pointer;
   padding: 0 1.5rem;
   font-size: 1.5rem;
   text-decoration: none;
   color: #fff;
 }
-.header .intro {
+.home .intro {
   position: absolute;
   width: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.header .intro h1 {
+.home .intro h1 {
   font-size: 4.5rem;
 }
-.header .intro h1::before {
+.home .intro h1::before {
   content: "Front-end Developer";
   text-transform: uppercase;
   font-size: 1.13rem;
@@ -78,15 +79,15 @@ html, body {
   font-weight: 200;
   letter-spacing: 1px;
 }
-.header .intro .icons {
+.home .intro .icons {
   float: right;
 }
-.header .intro i {
+.home .intro i {
   font-size: 0.75em;
   color: #fff;
   padding: 0 1rem;
 }
-.header .intro p {
+.home .intro p {
   padding-top: 1rem;
   font-size: 1.3rem;
 }
@@ -162,6 +163,8 @@ html, body {
 .about {
   display: flex;
   justify-content: center;
+  padding: 5rem 0;
+  background: #f5f5f5;
 }
 .about .about-text {
   width: 35%;
@@ -216,22 +219,22 @@ html, body {
   }
 }
 @media (max-width: 900px) {
-  .header .intro {
+  .home .intro {
     width: 90%;
     text-align: center;
   }
-  .header .intro h1::before {
+  .home .intro h1::before {
     width: 100%;
     left: 0;
     text-align: center;
   }
-  .header .header-nav ul {
+  .home .home-nav ul {
     flex-direction: row;
     flex-wrap: wrap;
     height: auto;
   }
-  .header .header-nav ul li {
-    padding: 0.5rem 0;
+  .home .home-nav ul li, .home .home-nav ul li a {
+    padding: 0.5rem 2rem;
   }
 
   .projects {

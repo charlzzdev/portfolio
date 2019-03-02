@@ -18,21 +18,22 @@
       display: none;
 }
 
-.header{
+.home{
       height: 100%;
       background: linear-gradient(120deg, $blue, $green);
       background-size: 200% 100%;
       animation: background-gradient 5s linear infinite alternate;
       color: #fff;
 
-      .header-nav ul{
+      .home-nav ul{
             list-style-type: none;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 35vh;
 
-            li a{
+            li, li a{
+                  cursor: pointer;
                   padding: 0 1.5rem;
                   font-size: 1.5rem;
                   text-decoration: none;

@@ -27,7 +27,7 @@
 }
 
 @media (max-width: 900px){
-      .header{
+      .home{
             .intro{
                   width: 90%;
                   text-align: center;
@@ -38,12 +38,12 @@
                   }
             }
 
-            .header-nav ul{
+            .home-nav ul{
                   flex-direction: row;
                   flex-wrap: wrap;
                   height: auto;
-                  li{
-                        padding: 0.5rem 0;
+                  li, li a{
+                        padding: 0.5rem 2rem;
                   }
             }
       }
