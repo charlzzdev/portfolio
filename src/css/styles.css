@@ -240,6 +240,13 @@ html, body {
   .projects {
     grid-template-columns: 1fr;
   }
+  .projects figure figcaption {
+    left: -50%;
+    transition: left 300ms !important;
+  }
+  .projects figure:hover figcaption {
+    left: 50%;
+  }
 
   .about {
     flex-direction: column-reverse;
