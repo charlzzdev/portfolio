@@ -16,12 +16,27 @@ html, body{
 
 ::selection{
       background: $green;
+      color: #333;
 }
 
 .section-divider{
       font-size: 2rem;
-      padding: 5rem 0;
+      padding: 10rem 0;
+      margin: 5rem 0;
       text-align: center;
+      clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
+      background: #fafafa;
+      h1{
+            background: linear-gradient(-50deg, $green, $blue);
+            width: 30rem;
+            border-radius: 25px;
+            padding: 25px;
+            margin: 0 auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            box-shadow: 0 4px 5px #eee;
+      }
 }
 
 @import 'home.scss';
