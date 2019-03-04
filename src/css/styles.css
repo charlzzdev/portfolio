@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:200,500");
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,400");
 * {
   padding: 0;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Nunito", sans-serif;
   box-sizing: border-box;
 }
 
@@ -47,7 +47,7 @@ html, body {
   transition: color 300ms;
 }
 .home .intro i:hover, .home .home-nav ul li:hover, .home .home-nav ul li a:hover {
-  color: #efefef;
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .icons-mobile {
@@ -68,9 +68,12 @@ html, body {
   align-items: center;
   height: 35vh;
 }
+.home .home-nav ul li {
+  padding: 0.65rem 1.5rem;
+}
 .home .home-nav ul li, .home .home-nav ul li a {
   cursor: pointer;
-  padding: 0 1.5rem;
+  border-radius: 7px;
   font-size: 1.5rem;
   text-decoration: none;
   color: #fff;
@@ -260,7 +263,7 @@ html, body {
     height: auto;
   }
   .home .home-nav ul li, .home .home-nav ul li a {
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 2.5rem;
   }
 
   .projects {

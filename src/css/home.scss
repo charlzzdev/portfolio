@@ -10,7 +10,7 @@
 %hover {
       transition: color 300ms;
       &:hover{
-            color: #efefef;
+            background: rgba(255,255,255,0.15);
       }
 }
 
@@ -32,9 +32,13 @@
             align-items: center;
             height: 35vh;
 
+            li{
+                  padding: 0.65rem 1.5rem;
+            }
+
             li, li a{
                   cursor: pointer;
-                  padding: 0 1.5rem;
+                  border-radius: 7px;
                   font-size: 1.5rem;
                   text-decoration: none;
                   color: #fff;
