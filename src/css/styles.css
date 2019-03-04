@@ -226,6 +226,18 @@ html, body {
 
   .projects {
     grid-template-columns: 1fr 1fr;
+    grid-template-areas: "first first" "second third";
+  }
+  .projects figure:nth-child(1) {
+    grid-area: first;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .projects figure:nth-child(2) {
+    grid-area: second;
+  }
+  .projects figure:nth-child(3) {
+    grid-area: third;
   }
 
   .about .about-text {
@@ -253,6 +265,7 @@ html, body {
 
   .projects {
     grid-template-columns: 1fr;
+    grid-template-areas: "first first" "second second" "third third";
   }
   .projects figure figcaption {
     left: -50%;
@@ -260,6 +273,9 @@ html, body {
   }
   .projects figure:hover figcaption {
     left: 50%;
+  }
+  .projects figure:nth-child(1) {
+    width: 100%;
   }
 
   .about {

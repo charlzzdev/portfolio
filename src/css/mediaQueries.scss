@@ -17,6 +17,19 @@
 
       .projects{
             grid-template-columns: 1fr 1fr;
+            grid-template-areas: "first first"
+                                                      "second third";
+            figure:nth-child(1){
+                  grid-area: first;
+                  width: 50%;
+                  margin: 0 auto;
+            }
+            figure:nth-child(2){
+                  grid-area: second;
+            }
+            figure:nth-child(3){
+                  grid-area: third;
+            }
       }
 
       .about{
@@ -50,7 +63,9 @@
 
       .projects{
             grid-template-columns: 1fr;
-
+            grid-template-areas: "first first"
+                                                      "second second"
+                                                      "third third";
             figure{
                   figcaption{
                         left: -50%;
@@ -58,6 +73,9 @@
                   }
                   &:hover figcaption{
                         left: 50%;
+                  }
+                  &:nth-child(1){
+                        width: 100%;
                   }
             }
       }
