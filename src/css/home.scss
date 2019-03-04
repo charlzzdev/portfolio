@@ -34,6 +34,10 @@
 
             li{
                   padding: 0.65rem 1.5rem;
+                  &:focus{
+                        outline: 0;
+                        background: rgba(255,255,255,0.25);
+                  }
             }
 
             li, li a{

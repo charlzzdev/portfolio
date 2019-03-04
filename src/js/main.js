@@ -8,6 +8,7 @@ if(!isIE && !isSafari && !isEdge){
       links.forEach(link => {
             const sectionName = link.children[0].innerHTML;
             link.innerHTML = sectionName;
+            link.setAttribute('tabIndex', '0');
 
             link.addEventListener('click', () => {
                   const section = document.getElementById(link.innerHTML.toLowerCase());
@@ -15,6 +16,10 @@ if(!isIE && !isSafari && !isEdge){
                         top: section.getBoundingClientRect().top + pageYOffset,
                         behavior: 'smooth'
                   });
+            });
+
+            link.addEventListener('keyup', (e) => {
+                  if(e.keyCode === 13) link.click();
             });
       });
 }
