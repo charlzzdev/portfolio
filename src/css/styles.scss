@@ -39,6 +39,28 @@ html, body{
       }
 }
 
+.icons{
+      position: absolute;
+      right: 12rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 4rem;
+      a{
+            display: block;
+            text-decoration: none;
+            color: #f1f1f1;
+            font-size: 3rem;
+            padding: 1rem 0;
+            text-align: center;
+            transition: 200ms;
+            filter: drop-shadow(0 1px 1px rgba(0,0,0,0.3));
+            &:hover{
+                  color: #fff;
+                  margin-right: 0.3rem;
+            }
+      }
+}
+
 @import 'home.scss';
 @import 'projects.scss';
 @import 'about.scss';

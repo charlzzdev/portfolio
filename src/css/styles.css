@@ -35,6 +35,28 @@ html, body {
   box-shadow: 0 4px 5px #eee;
 }
 
+.icons {
+  position: absolute;
+  right: 12rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4rem;
+}
+.icons a {
+  display: block;
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 3rem;
+  padding: 1rem 0;
+  text-align: center;
+  transition: 200ms;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.3));
+}
+.icons a:hover {
+  color: #fff;
+  margin-right: 0.3rem;
+}
+
 @keyframes background-gradient {
   0% {
     background-position: 0;
@@ -43,15 +65,11 @@ html, body {
     background-position: 100%;
   }
 }
-.home .intro i, .home .home-nav ul li, .home .home-nav ul li a {
+.home .home-nav ul li, .home .home-nav ul li a {
   transition: color 300ms;
 }
-.home .intro i:hover, .home .home-nav ul li:hover, .home .home-nav ul li a:hover {
+.home .home-nav ul li:hover, .home .home-nav ul li a:hover {
   background: rgba(255, 255, 255, 0.15);
-}
-
-.icons-mobile {
-  display: none;
 }
 
 .home {
@@ -100,14 +118,6 @@ html, body {
   top: -1rem;
   font-weight: 200;
   letter-spacing: 1px;
-}
-.home .intro .icons {
-  float: right;
-}
-.home .intro i {
-  font-size: 0.75em;
-  color: #fff;
-  padding: 0 1rem;
 }
 .home .intro p {
   padding-top: 1rem;
@@ -215,19 +225,17 @@ html, body {
 
 @media (max-width: 1500px) {
   .icons {
-    display: none;
-  }
-
-  .icons-mobile {
-    display: block;
-    width: 100%;
+    top: initial;
+    bottom: 3rem;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, 0);
     text-align: center;
-    position: absolute;
-    bottom: 4rem;
-    font-size: 4.5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
-  .icons-mobile i {
-    color: #fff;
+  .icons a {
     padding: 0 1rem;
   }
 
