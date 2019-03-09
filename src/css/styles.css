@@ -204,6 +204,12 @@ html, body {
   line-height: 1.7;
 }
 
+.contact .email-form textarea, .contact .email-form ul li input {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+}
+
 .contact a {
   color: #333;
   display: block;
@@ -221,6 +227,58 @@ html, body {
 .contact p {
   padding: 2rem 0;
   text-align: center;
+}
+.contact .email-form {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 7px;
+}
+.contact .email-form ul {
+  list-style-type: none;
+  width: 70%;
+}
+.contact .email-form ul li {
+  position: relative;
+  margin: 1.75rem 0;
+}
+.contact .email-form ul li label {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  color: #999;
+  padding: 0 0.4rem;
+  cursor: text;
+  transition: 200ms ease;
+}
+.contact .email-form ul li input {
+  width: 100%;
+}
+.contact .email-form textarea {
+  display: block;
+  width: 100% !important;
+  min-height: 150px;
+}
+.contact .email-form button {
+  width: 10rem;
+  background: #03a9f4;
+  color: #fff;
+  border: 0;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px #999;
+}
+.contact .email-form :focus {
+  outline: 0;
+  border: 1px solid #1bffb3;
 }
 
 @media (max-width: 1500px) {
@@ -257,6 +315,10 @@ html, body {
 
   .about .about-text {
     width: 60%;
+  }
+
+  .contact .email-form {
+    width: 75%;
   }
 }
 @media (max-width: 900px) {
@@ -307,6 +369,9 @@ html, body {
 
   .contact a {
     width: 70%;
+  }
+  .contact .email-form {
+    width: 100%;
   }
 
   .section-divider {
