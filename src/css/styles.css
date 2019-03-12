@@ -266,15 +266,27 @@ html, body {
   width: 100% !important;
   min-height: 150px;
 }
-.contact .email-form button {
-  width: 10rem;
-  background: #03a9f4;
+.contact .email-form .buttons {
+  width: 70%;
+  display: flex;
+}
+.contact .email-form .buttons button, .contact .email-form .buttons a {
+  width: 50%;
+  margin: 0;
+  background: #0071c5;
   color: #fff;
+  font-size: 16px;
   border: 0;
   padding: 0.5rem;
+  justify-content: center;
   cursor: pointer;
-  border-radius: 25px;
-  box-shadow: 0 2px 5px #999;
+  transition: 200ms;
+}
+.contact .email-form .buttons button:hover, .contact .email-form .buttons a:hover {
+  filter: brightness(110%);
+}
+.contact .email-form .buttons .gmail-btn {
+  background: #d54b3d;
 }
 .contact .email-form :focus {
   outline: 0;

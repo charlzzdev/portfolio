@@ -23,3 +23,14 @@ if(!isIE && !isSafari && !isEdge){
             });
       });
 }
+
+const emailForm = document.querySelector('.email-form');
+const gmailBtn = document.querySelector('.gmail-btn');
+
+gmailBtn.addEventListener('click', () => {
+      const subject = emailForm[0].value;
+      const message = emailForm[1].value.replace(/\r\n|\r|\n/g, '%0A');
+      
+      gmailBtn.href = `https://mail.google.com/mail/u/0/?view=cm&to=contact@charleseller.dev&su=${subject}&body=${message}`;
+      gmailBtn.click();
+});

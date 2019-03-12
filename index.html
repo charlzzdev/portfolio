@@ -81,22 +81,21 @@
             <h1>Contact</h1>
       </header>
       <footer class="contact">
-            <form class="email-form">
+            <form class="email-form" action="mailto:contact@charleseller.dev">
                   <ul>
-                        <li>
-                              <input type="email" id="email" name="email">
-                              <label for="email">E-mail</label>
-                        </li>
                         <li>
                               <input type="text" id="subject" name="subject">
                               <label for="subject">Subject</label>
                         </li>
                         <li>
-                              <textarea id="message"></textarea>
+                              <textarea id="message" name="body"></textarea>
                               <label for="message">Message</label>
                         </li>
                   </ul>
-                  <button>Send</button>
+                  <div class="buttons">
+                        <button class="outlook-btn">Send Via Outlook</button>
+                        <a href="#" class="gmail-btn">Send Via Gmail</a>
+                  </div>
             </form>
             <a href="https://www.linkedin.com/in/charles-eller-5796b6180/"><i class="fab fa-linkedin"></i> Charles Eller</a>
             <a href="mailto:contact@charleseller.dev"><i class="far fa-envelope"></i> contact@charleseller.dev</a>
