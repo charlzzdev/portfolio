@@ -1,107 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <meta name="description" content="Portfolio of Web Developer Charles Eller. Available to work: contact@charleseller.dev">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-      <link rel="stylesheet" href="./src/css/styles.css">
-      <base target="_blank">
-      <title>Charles Eller - Web Developer Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Portfolio of Web Developer Charles Eller. Email: contact@charleseller.dev">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <title>Charles Eller - Web Developer Portfolio</title>
 </head>
+
 <body>
-      <div class="icons">
-            <a href="https://github.com/charlzzdev" title="Github profile"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/charles-eller-5796b6180/" title="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:contact@charleseller.dev" title="E-mail"><i class="far fa-envelope"></i></a>
+  <div class="icons">
+    <a href="https://github.com/charlzzdev" title="Github profile"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/charles-eller-5796b6180/" title="LinkedIn profile"><i
+        class="fab fa-linkedin"></i></a>
+    <a href="mailto:contact@charleseller.dev" title="E-mail"><i class="far fa-envelope"></i></a>
+  </div>
+  <header class="home" id="home">
+    <nav class="home-nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="intro">
+      <h1>Charles Eller</h1>
+      <p>Hi! I'm an 18-year-old self-taught web developer.</p>
+    </div>
+  </header>
+  <header class="section-divider" id="projects">
+    <h1>Projects</h1>
+  </header>
+  <section class="projects">
+    <figure tabindex="0">
+      <img src="./src/assets/Weather-App.jpg" class="bg" alt="Screenshot of Weather app">
+      <figcaption>
+        <h1>Weather App</h1>
+        <p>Get the current weather and forecast for any city using the <a
+            href="https://openweathermap.org/api">OpenWeatherMap API</a>. It uses <a
+            href="https://materializecss.com">Materialize</a> and is built with <a href="https://reactjs.org">React</a>.
+        </p>
+        <div class="actions">
+          <a href="https://weather.charleseller.dev">View Project <i class="fas fa-eye"></i></a>
+          <a href="https://github.com/charlzzdev/weather-app">View Code <i class="fas fa-code"></i></a>
+        </div>
+      </figcaption>
+    </figure>
+    <figure tabindex="0">
+      <img src="./src/assets/Entertainment-Rating-App.jpg" class="bg" alt="Screenshot of Entertainment Rating app">
+      <figcaption>
+        <h1>Entertainment Rating App</h1>
+        <p>Search music using the <a href="https://developer.napster.com/api/v2.2">Napster API</a> and rate it. It's
+          built with <a href="https://reactjs.org">React</a> and the ratings are stored on <a
+            href="https://firebase.google.com">Firebase</a>.</p>
+        <div class="actions">
+          <a href="https://entertainment-rating.charleseller.dev">View Project <i class="fas fa-eye"></i></a>
+          <a href="https://github.com/charlzzdev/entertainment-rating-app">View Code <i class="fas fa-code"></i></a>
+        </div>
+      </figcaption>
+    </figure>
+    <figure tabindex="0">
+      <img src="./src/assets/Webshop-App.jpg" class="bg" alt="Screenshot of Webshop app">
+      <figcaption>
+        <h1>Webshop App</h1>
+        <p>In this app users can order items and registered users are able to post and manage their items that were
+          ordered. It's made with <a href="https://reactjs.org">React</a> and <a
+            href="https://firebase.google.com">Firebase</a>.</p>
+        <div class="actions">
+          <a href="https://charlzzdev-webshop.firebaseapp.com">View Project <i class="fas fa-eye"></i></a>
+          <a href="https://github.com/charlzzdev/webshop">View Code <i class="fas fa-code"></i></a>
+        </div>
+      </figcaption>
+    </figure>
+  </section>
+  <header class="section-divider" id="about">
+    <h1>About</h1>
+  </header>
+  <section class="about">
+    <p class="about-text">I started learning web development at the age of 16. I love to learn modern technologies and I
+      strive to improve everyday. I have been working on the projects above solo, however, I am excited to work in
+      teams.</p>
+  </section>
+  <header class="section-divider" id="contact">
+    <h1>Contact</h1>
+  </header>
+  <footer class="contact">
+    <form class="email-form" name="contact" method="POST" action="/#success" data-netlify="true"
+      data-netlify-recaptcha="true">
+      <ul>
+        <li>
+          <input type="text" id="name" name="name">
+          <label for="name">Name</label>
+        </li>
+        <li>
+          <input type="text" id="email" name="email">
+          <label for="email">Email</label>
+        </li>
+        <li>
+          <input type="text" id="subject" name="subject">
+          <label for="subject">Subject</label>
+        </li>
+        <li>
+          <textarea id="message" name="message"></textarea>
+          <label for="message">Message</label>
+        </li>
+        <li>
+          <div data-netlify-recaptcha="true"></div>
+        </li>
+      </ul>
+      <div id="success">
+        <h1>Success!</h1>
+        <p>Thank you for your email. I will be in touch with you shortly.</p>
+        <a href="#contact">X</a>
       </div>
-      <header class="home" id="home">
-            <nav class="home-nav">
-                  <ul>
-                        <li><a href="#home" target="_self">Home</a></li>
-                        <li><a href="#projects" target="_self">Projects</a></li>
-                        <li><a href="#about" target="_self">About</a></li>
-                        <li><a href="#contact" target="_self">Contact</a></li>
-                  </ul>
-            </nav>
-            <div class="intro">
-                  <h1>Charles Eller</h1>
-                  <p>Hi! I'm a 17-year-old self-taught web developer.</p>
-            </div>
-      </header>
-      <header class="section-divider" id="projects">
-            <h1>Projects</h1>
-      </header>
-      <section class="projects">
-            <figure tabindex="0">
-                  <img src="./src/assets/Weather-App.jpg" class="bg" alt="Screenshot of Weather app">
-                  <figcaption>
-                        <h1>Weather App</h1>
-                        <p>Get the current weather and forecast for any city using the <a href="https://openweathermap.org/api">OpenWeatherMap API</a>. It uses <a href="https://materializecss.com">Materialize</a> and is built with <a href="https://reactjs.org">React</a>.</p>
-                        <div class="actions">
-                              <a href="https://weather.charleseller.dev">View Project <i class="fas fa-eye"></i></a>
-                              <a href="https://github.com/charlzzdev/weather-app">View Code <i class="fas fa-code"></i></a>
-                        </div>
-                  </figcaption>
-            </figure>
-            <figure tabindex="0">
-                  <img src="./src/assets/Entertainment-Rating-App.jpg" class="bg" alt="Screenshot of Entertainment Rating app">
-                  <figcaption>
-                        <h1>Entertainment Rating App</h1>
-                        <p>Search music using the <a href="https://developer.napster.com/api/v2.2">Napster API</a> and rate it. It's built with <a href="https://reactjs.org">React</a> and the ratings are stored on <a href="https://firebase.google.com">Firebase</a>.</p>
-                        <div class="actions">
-                              <a href="https://entertainment-rating.charleseller.dev">View Project <i class="fas fa-eye"></i></a>
-                              <a href="https://github.com/charlzzdev/entertainment-rating-app">View Code <i class="fas fa-code"></i></a>
-                        </div>
-                  </figcaption>
-            </figure>
-            <figure tabindex="0">
-                  <img src="./src/assets/Webshop-App.jpg" class="bg" alt="Screenshot of Webshop app">
-                  <figcaption>
-                        <h1>Webshop App</h1>
-                        <p>In this app users can order items and registered users are able to post and manage their items that were ordered. It's made with <a href="https://reactjs.org">React</a> and <a href="https://firebase.google.com">Firebase</a>.</p>
-                        <div class="actions">
-                              <a href="https://charlzzdev-webshop.firebaseapp.com">View Project <i class="fas fa-eye"></i></a>
-                              <a href="https://github.com/charlzzdev/webshop">View Code <i class="fas fa-code"></i></a>
-                        </div>
-                  </figcaption>
-            </figure>
-      </section>
-      <header class="section-divider" id="about">
-            <h1>About</h1>
-      </header>
-      <section class="about">
-            <p class="about-text">I started learning web development at the age of 16. I love to learn modern technologies and I strive to improve everyday. I have been working on the projects above solo, however, I am excited to work in teams.</p>
-            <div class="about-img">
-                  <img src="https://via.placeholder.com/150" alt="Picture of me">
-            </div>
-      </section>
-      <header class="section-divider" id="contact">
-            <h1>Contact</h1>
-      </header>
-      <footer class="contact">
-            <form class="email-form" action="mailto:contact@charleseller.dev">
-                  <ul>
-                        <li>
-                              <input type="text" id="subject" name="subject">
-                              <label for="subject">Subject</label>
-                        </li>
-                        <li>
-                              <textarea id="message" name="body"></textarea>
-                              <label for="message">Message</label>
-                        </li>
-                  </ul>
-                  <div class="buttons">
-                        <button class="outlook-btn">Send Via Outlook</button>
-                        <a href="#" class="gmail-btn">Send Via Gmail</a>
-                  </div>
-            </form>
-            <a href="https://www.linkedin.com/in/charles-eller-5796b6180/"><i class="fab fa-linkedin"></i> Charles Eller</a>
-            <a href="mailto:contact@charleseller.dev"><i class="far fa-envelope"></i> contact@charleseller.dev</a>
-            <p>2019 Charles Eller</p>
-      </footer>
-      
-      <script src="./src/js/main.js"></script>
+      <button class="btn">Send</button>
+    </form>
+    <a href="https://www.linkedin.com/in/charles-eller-5796b6180/"><i class="fab fa-linkedin"></i> Charles Eller</a>
+    <a href="mailto:contact@charleseller.dev"><i class="far fa-envelope"></i> contact@charleseller.dev</a>
+    <p>2019 Charles Eller</p>
+  </footer>
+
+  <script src="./src/js/main.js"></script>
 </body>
+
 </html>

@@ -14,6 +14,65 @@ html, body{
       height: 100%;
 }
 
+.btn{
+  padding: 0.75rem 2rem;
+  background: linear-gradient(120deg, $blue, $green);
+  background-size: 200%;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 1.05rem;
+  border: 0;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  animation: fadeOut 500ms;
+  
+  &:hover{
+    animation: fadeIn 500ms forwards;
+  }
+
+  @keyframes fadeIn {
+    from { background-position: 0px }
+    to{ background-position-x: -50px }
+  }
+  @keyframes fadeOut {
+    from { background-position: -50px }
+    to{ background-position-x: 0px }
+  }
+}
+
+#success { 
+  display: none;
+
+  &:target{
+    display: block;
+    position: relative;
+    margin-bottom: 1rem;
+    background: $green;
+    padding: 1rem;
+  
+    h1{
+      font-size: 1rem;
+      text-align: left;
+      margin-bottom: 0.3rem;
+    }
+
+    p{
+      padding: 0;
+    }
+
+    a{
+      position: absolute;
+      line-height: 0;
+      width: auto;
+      top: 5px;
+      right: 5px;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+  }
+}
+
 ::selection{
       background: $green;
       color: #333;
