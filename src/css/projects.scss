@@ -35,12 +35,10 @@
                         height: 100%;
                         background: #fff;
                         opacity: 0;
-                        transform: rotateZ(180deg);
                         animation: hoverItem 300ms forwards;
 
                         @keyframes hoverItem{
                               100%{
-                                    transform: rotateZ(0deg);
                                     opacity: 0.95;
                               }
                         }
